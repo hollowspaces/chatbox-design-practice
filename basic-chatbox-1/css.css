@@ -43,7 +43,7 @@ body {
     visibility: hidden;
 }
 
-#log .emote 
+#log .emote {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -64,8 +64,8 @@ body {
 }
 
 #log .meta {
-    width: 40%;
-    text-align: right;
+    width: 100%;
+    text-align: center;
     padding-right: 0.5em;
     white-space: nowrap;
    /* text-overflow: ellipsis;
@@ -75,7 +75,7 @@ body {
 #log .message {
     word-wrap: break-word;
     width: 100%;
-  	padding:32px;
+  	padding:28px;
 		margin-bottom: 20px;
 		background-image: linear-gradient(180deg, #3292a6, #49d8f5);
 		border-radius: 48px;
@@ -96,12 +96,11 @@ body {
     position: relative;
     height: 2em;
     vertical-align: middle;
-    top: -0.1em;
-  background-image: linear-gradient(#5cafbf, #fff);
-  border-radius: 32px;
-  z-index: 1;
-  position: relative;
-  top:18px;
+  	background-image: linear-gradient(#5cafbf, #fff);
+  	border-radius: 32px;
+  	z-index: 1;
+  	position: relative;
+  	top:18px;
 }
 
 /* .name {
