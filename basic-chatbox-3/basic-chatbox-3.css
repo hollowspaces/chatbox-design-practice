@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+/*     text-shadow: 0 0 1px #000, 0 0 2px #000; */
+    background: {background_color};
+    font-family: 'Gabarito', cursive;
+    font-weight: 400;
+    font-size: {font_size};
+    line-height: 1.5em;
+    color: {text_color};
+}
+
+#log>div {
+    animation: fadeInRight .3s ease forwards, fadeOut 0.5s ease {message_hide_delay} forwards;
+    -webkit-animation: fadeInRight .3s ease forwards, fadeOut 0.5s ease {message_hide_delay} forwards;
+}
+
+.colon {
+    display: none;
+}
+
+#log {
+/*     display: table; */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0 10px 10px;
+    width: 100%;
+    table-layout: fixed;
+}
+
+#log>div {
+    display: flex;
+}
+
+#log>div.deleted {
+    visibility: hidden;
+}
+
+#log .emote {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 0.4em 0.2em;
+    position: relative;
+}
+
+#log .emote img {
+    display: inline-block;
+    height: 1.5em;
+    opacity: 0;
+}
+
+#log .message-wrapper,#log .meta-wrapper {
+    vertical-align: top;
+/*     display: table-cell; */
+    padding-bottom: 1.5em;
+}
+
+#log .meta-wrapper {
+/*     width: 35%; */
+    text-align: left;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+/*     overflow: hidden; */
+  	padding-right: 0.7em;
+}
+
+#log .meta-wrapper .meta {
+  	background-image: linear-gradient(#57c0f4, #2586e8);
+  	box-shadow: 0px 5px 5px rgba(33, 94, 147, 0.35) ;
+		border-radius: 48px;
+  	padding: 12px;
+  	position: relative;
+}
+
+#log .message-wrapper {
+    word-wrap: break-word;
+/*     width: 65%; */
+}
+
+#log .message-wrapper .message {
+    background-image: linear-gradient(90deg, #2586e8, #fec8fc);
+  	box-shadow: 0px 5px 5px rgba(33, 94, 147, 0.35) ;
+		border-radius: 48px;
+  	padding: 12px;
+}
+
+.badge {
+    display: inline-block;
+    margin-right: 0.2em;
+/*     position: relative; */
+  	position: absolute;
+    height: 0.73em;
+    vertical-align: middle;
+/*     top: -0.1em; */
+  	bottom: 0;
+  	left: 0;
+}
+
+.name {
+    margin-left: 0.2em;
+  	height: 100%;
+  	color: #FAFAFA;
+/*   	text-shadow: 0 0 1px #000, 0 0 2px #000; */
+}
